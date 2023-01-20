@@ -40,7 +40,7 @@ const Explore = () => {
         <Image src={cage} width={200} className="w-[170px]"/>
       </div>
 
-      <div className="flex items-center justify-between bg-faintYellow pb-20 px-8 lg:px-24">
+      <div className="flex items-center justify-between bg-faintYellow pb-20 ">
         <Image src={sphere} />
 
         <div className="mr-[40px]">
