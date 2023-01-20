@@ -2,7 +2,15 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { close, menu, logo, picardyFoo, darkMenu } from '../public/assets';
+import {
+  close,
+  menu,
+  logo,
+  picLogo,
+  picardyFoo,
+  darkMenu,
+  picardyDark,
+} from '../public/assets';
 import Button from '../components/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
@@ -62,7 +70,7 @@ const ClaimNav = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar ">
       <Link href="/" className="flex items-center gap-2" passHref>
         <Image
-          src={picardyFoo}
+          src={picardyDark}
           alt="Logo"
           className="w-[100px] md:w-[160px] md:h-[50px]"
         />

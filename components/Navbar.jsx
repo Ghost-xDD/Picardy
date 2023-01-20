@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { close, menu, logo } from '../public/assets';
+import { close, menu, logo, picLogo } from '../public/assets';
 import Button from '../components/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 import NavModal from './NavModal';
@@ -51,7 +51,7 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar ">
       <Link href="/" className="flex items-center gap-2" passHref>
         <Image
-          src={logo}
+          src={picLogo}
           alt="Logo"
           className="w-[100px] md:w-[160px] md:h-[50px]"
         />

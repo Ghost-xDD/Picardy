@@ -22,6 +22,8 @@ import picardy2 from './picardy2.png';
 import darkMenu from './darkMenu.png';
 import fluff2 from './fluff2.png';
 import claim from './claim.png';
+import picLogo from './picLogo.svg';
+import picardyDark from './picardyDark.svg';
 
 export {
   cage,
@@ -48,4 +50,6 @@ export {
   darkMenu,
   claim,
   fluff2,
+  picLogo,
+  picardyDark,
 };

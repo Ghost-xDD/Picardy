@@ -161,10 +161,10 @@ const Hero = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <Button props="Builder's Den" />
+          <Button props="Join Our Waitlist" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button className="text-[#F9CC16] uppercase font-bold text-[12px] md:text-lg">
-            Join Discord
+            Read Docs
           </button>
         </motion.div>
       </div>
