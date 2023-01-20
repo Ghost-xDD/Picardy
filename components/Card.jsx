@@ -16,7 +16,7 @@ const Card = ({ image, title, content }) => {
   return (
     <div className=" lg:px-5 py-24 mt-20 lg:mt-0  bg-cardGrey rounded-xl shadow-2xl w-full   lg:w-[30%] h-[500px] flex flex-col items-center">
       <div className="text-center ">
-        <Image src={image} />
+        <Image src={image} className="w-[50px] md:w-[70px]"/>
       </div>
       <div className="pb-16">
         <h1

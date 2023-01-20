@@ -37,11 +37,11 @@ const Explore = () => {
           <Button props="Read Docs" />
         </div>
 
-        <Image src={cage} width={200} className="w-[170px]"/>
+        <Image src={cage} width={200} className="w-[190px]"/>
       </div>
 
       <div className="flex items-center justify-between bg-faintYellow pb-20 ">
-        <Image src={sphere} />
+        <Image src={sphere1} className="w-[190px]"/>
 
         <div className="mr-[40px]">
           <h1
