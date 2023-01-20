@@ -41,7 +41,7 @@ const Explore = () => {
       </div>
 
       <div className="flex items-center justify-between bg-faintYellow pb-20 ">
-        <Image src={sphere} className="w-[200px] md:w-[300px] lg:w-[300px]" />
+        <Image src={sphere} className="w-[220px] md:w-[300px] lg:w-[300px]" />
 
         <div className="mr-[40px]">
           <h1
