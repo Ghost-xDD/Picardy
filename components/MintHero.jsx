@@ -25,7 +25,9 @@ const MintHero = () => {
         </h1>
       </div>
 
-      <p className={`${euclid.variable} font-serif text-[#818182] text-center text-[18px]`}>
+      <p
+        className={`${euclid.variable} font-serif text-[#FFFFFF] text-center text-[18px]`}
+      >
         Claim your Picardy domain to be one of the genesis users of every dApp
         powered by Picardy <br /> Protocol. Earn rewards while doing so.
       </p>
