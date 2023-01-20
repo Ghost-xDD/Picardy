@@ -163,7 +163,7 @@ const Hero = () => {
         >
           <Button props="Builder's Den" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button className="text-[#F9CC16] uppercase font-bold">
+          <button className="text-[#F9CC16] uppercase font-bold text-[12px] md:text-lg">
             Join Discord
           </button>
         </motion.div>
