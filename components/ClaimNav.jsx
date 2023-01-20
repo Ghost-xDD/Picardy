@@ -75,7 +75,9 @@ const ClaimNav = () => {
             key={item.name}
             href={item.href}
             scroll={false}
-            className={`${euclid.variable} font-serif font-bold cursor-pointer text-[18px]  ${
+            className={`${
+              euclid.variable
+            } font-serif font-bold cursor-pointer text-[18px]  ${
               router.pathname == item.href
                 ? 'text-[#FFFFFF] font-semibold   p-1 px-6 rounded-xl transition-all duration-500'
                 : 'text-[#FFFFFF] px-6 hover:opacity-80'
@@ -92,7 +94,7 @@ const ClaimNav = () => {
 
       {/* Mobile Menu */}
 
-      <motion.div className="sm:hidden flex flex-1 justify-end items-center">
+      <motion.div className="sm:hidden flex flex-1 justify-end items-center z-10">
         <Image
           src={toggle ? close : darkMenu}
           alt="menu"
