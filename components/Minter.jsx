@@ -174,7 +174,7 @@ const Minter = () => {
         {isConnected && (
           <button
             type="submit"
-            className="text-black mt-10 uppercase font-bold border-2 border-[button-gradient] flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
+            className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
             onClick={mintDomain}
           >
             Claim Domain
@@ -184,7 +184,7 @@ const Minter = () => {
         {!isConnected && (
           <button
             type="submit"
-            className="text-black mt-10 uppercase font-bold border-2 border-[button-gradient] flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
+            className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
             onClick={notify}
           >
             Claim Domain
