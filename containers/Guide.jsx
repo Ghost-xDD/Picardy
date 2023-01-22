@@ -14,7 +14,7 @@ const Guide = () => {
     <div className="">
       {/* <div className='p-2 bg-gray-400 absolute w-[82%] bottom-20' /> */}
       <div className="flex justify-center">
-        <Image src={fluff} className="w-[150px] md:w-[200px]" />
+        <Image src={fluff} className="w-[100px] md:w-[200px]" />
       </div>
 
       <div>
