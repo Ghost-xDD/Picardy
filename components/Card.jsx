@@ -20,7 +20,7 @@ const Card = ({ image, title, content }) => {
       </div>
       <div className="pb-16">
         <h1
-          className={`${lemonMilk.variable} uppercase text-xl py-4 font-[500] font-sans`}
+          className={`${lemonMilk.variable} uppercase text-xl py-4 px-8 font-[500] font-sans`}
         >
           {title}
         </h1>

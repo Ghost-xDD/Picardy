@@ -16,10 +16,14 @@ const euclid = localFont({
 const Build = () => {
   return (
     <div className="text-center mt-24">
-      <h1 className={`${lemonMilk.variable} text-[28px] sm:text-[34px] font-sans  uppercase font-[500]`}>
+      <h1
+        className={`${lemonMilk.variable} text-[28px] sm:text-[34px] font-sans  uppercase font-[500]`}
+      >
         Buidl solutions with our smart contract library
       </h1>
-      <p className={`${euclid.variable} text-[#818182] text-lg mt-3 mb-24 font-serif`}>
+      <p
+        className={`${euclid.variable} text-[#818182] text-lg mt-3 mb-24 font-serif`}
+      >
         Create solutions for creators and artistes using the royalty and token
         smart contracts in our protocol.
       </p>
