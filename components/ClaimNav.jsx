@@ -102,15 +102,9 @@ const ClaimNav = () => {
 
       {/* Mobile Menu */}
 
-      <motion.div className="sm:hidden flex flex-1 justify-end items-center z-10">
-        <Image
-          src={toggle ? close : darkMenu}
-          alt="menu"
-          className="w-[35px] h-[32px] object-contain  rounded-md"
-          onClick={() => setShowNav(true)}
-        />
-        <NavModal onClose={handleOnClose} visible={showNav} />
-      </motion.div>
+      <div className="sm:hidden flex flex-1 justify-end items-center z-10">
+        <ConnectButton showBalance={false} />
+      </div>
     </nav>
   );
 };
