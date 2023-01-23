@@ -8,6 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MintedModal from './MintedModal';
 import localFont from '@next/font/local';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const euclid = localFont({
   src: './euclid-fonts/Euclid Circular A Regular.ttf',
@@ -132,56 +133,67 @@ const Minter = () => {
 
   return (
     <section className="mt-6">
-      <form>
-        <div className="mb-6 flex items-center mx-6  md:mx-[180px] lg:mx-[400px]  text-center">
-          <input
-            type="text"
-            id="last_name"
-            className={`${euclid.variable} font-serif bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg outline-none focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5`}
-            placeholder="Enter your preferred name"
-            required
-            value={userDomain}
-            onChange={(e) => setUserDomain(e.target.value)}
-          />
-          <div className="p-0 rounded-r-lg">
-            <select
-              className={`${euclid.variable} font-serif focus:outline-none h-[42px]  rounded-r-lg bg-gradient-to-r from-[#C6FFDD] via-[#FBD786] to-[#F7797D] font-bold`}
-              onChange={handleChange}
-            >
-              {tlds
-                ? tlds.map((option, index) => (
-                    <option key={index} value={option} className="p-2">
-                      {option}
-                    </option>
-                  ))
-                : '...'}
-            </select>
+      {isConnected && (
+        <form>
+          <div className="mb-6 flex items-center mx-6  md:mx-[180px] lg:mx-[400px]  text-center">
+            <input
+              type="text"
+              id="last_name"
+              className={`${euclid.variable} font-serif bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg outline-none focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5`}
+              placeholder="Enter your preferred name"
+              required
+              value={userDomain}
+              onChange={(e) => setUserDomain(e.target.value)}
+            />
+            <div className="p-0 rounded-r-lg">
+              <select
+                className={`${euclid.variable} font-serif focus:outline-none h-[42px]  rounded-r-lg bg-gradient-to-r from-[#C6FFDD] via-[#FBD786] to-[#F7797D] font-bold`}
+                onChange={handleChange}
+              >
+                {tlds
+                  ? tlds.map((option, index) => (
+                      <option key={index} value={option} className="p-2">
+                        {option}
+                      </option>
+                    ))
+                  : '...'}
+              </select>
+            </div>
           </div>
-        </div>
 
-        <MintedModal
-          txHash={nftHash}
-          openMintModal={openMintModal}
-          handleOnClose={handleMintOnClose}
-        />
+          <MintedModal
+            txHash={nftHash}
+            openMintModal={openMintModal}
+            handleOnClose={handleMintOnClose}
+          />
 
-        <p
-          className={`${euclid.variable} font-serif text-white font-bold text-center mb-4`}
-        >
-          Domain Price: {selectTldPrice} MATIC
-        </p>
-
-        {isConnected && (
-          <button
-            type="submit"
-            className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
-            onClick={mintDomain}
+          <p
+            className={`${euclid.variable} font-serif text-white font-bold text-center mb-4`}
           >
-            Claim Domain
-          </button>
-        )}
+            Domain Price: {selectTldPrice} MATIC
+          </p>
 
-        {!isConnected && (
+          {isConnected && (
+            <button
+              type="submit"
+              className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
+              onClick={mintDomain}
+            >
+              Claim Domain
+            </button>
+          )}
+
+          {!isConnected && (
+            <button
+              type="submit"
+              className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
+              onClick={notify}
+            >
+              Claim Domain
+            </button>
+          )}
+
+          {/* {!isConnected && (
           <button
             type="submit"
             className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black"
@@ -189,9 +201,20 @@ const Minter = () => {
           >
             Claim Domain
           </button>
-        )}
-        <ToastContainer />
-      </form>
+        )} */}
+          <ToastContainer />
+        </form>
+      )}
+      {!isConnected && (
+        <div
+          className={`${euclid.variable} font-serif flex flex-col items-center justify-center`}
+        >
+          <h1 className="text-white text-xl py-4">
+            Connect wallet to get Started
+          </h1>
+          <ConnectButton showBalance={false} />
+        </div>
+      )}
     </section>
   );
 };
