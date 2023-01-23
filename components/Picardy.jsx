@@ -28,12 +28,12 @@ const Picardy = () => {
         >
           PICARDY NFT DOMAINS
         </h1>
-        <p className={`${euclidLight.variable} font-serif mt-6 text-lg`}>
+        <p className={`${euclidLight.variable} font-mono mt-6 text-lg`}>
           Picardy NFT Domains customizes and creates top level domains for
           communities and DAOs. Create your top level domains{' '}
           <span>
             (like{' '}
-            <span className={`${euclid.variable} font-bold`}>
+            <span className={`${euclid.variable} font-bold font-serif`}>
               .ape, .lens, .vibe
             </span>{' '}
             )

@@ -13,6 +13,11 @@ const euclid = localFont({
   variable: '--font-euclid',
 });
 
+const euclidLight = localFont({
+  src: './euclid-fonts/Euclid Circular A Light.ttf',
+  variable: '--font-euclidLight',
+});
+
 const Early = () => {
   return (
     <div className="bg-claimYellow mt-[80px] p-5 py-12 lg:p-16 flex items-center justify-between">
@@ -24,7 +29,7 @@ const Early = () => {
         >
           Early Access for Community <br /> Members
         </h1>
-        <p className={`${euclid.variable} font-serif mt-6 text-lg`}>
+        <p className={`${euclidLight.variable} font-mono mt-6 text-lg`}>
           Picardy Domains is brought to you by Picardy Protocol.
         </p>
       </div>
