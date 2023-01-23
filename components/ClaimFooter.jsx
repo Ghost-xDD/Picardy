@@ -20,7 +20,7 @@ const ClaimFooter = () => {
     <>
       <div className="">
         <div className="bg-claimFooter h-1/2 w-full flex md:flex-row flex-col justify-around items-start px-18 py-10 ">
-          <Image src={pineapple2} className="w-[100px] md:w-[200px]" />
+          <Image src={pineapple2} className="w-[100px] md:w-[150px]" />
 
           <div className="p-5 mt-6">
             <ul>
