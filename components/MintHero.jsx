@@ -29,7 +29,8 @@ const MintHero = () => {
         className={`${euclidLight.variable} font-mono text-[#FFFFFF] text-center text-[18px]`}
       >
         Claim your Picardy domain to be one of the genesis users of every dApp
-        powered by Picardy <br /> Protocol. Earn rewards while doing so.
+        powered by Picardy <br /> Protocol.
+        <br /> Earn rewards while doing so.
       </p>
 
       <div className="flex justify-center mt-16">

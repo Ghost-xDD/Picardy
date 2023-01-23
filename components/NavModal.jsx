@@ -6,6 +6,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaTwitter, FaLinkedin, FaDiscord } from 'react-icons/fa';
 import { BsGithub, BsMedium } from 'react-icons/bs';
+import localFont from '@next/font/local';
+
+const lemonMilk = localFont({
+  src: './lemon-font/LemonMilkRegular-X3XE2.otf',
+  variable: '--font-lemonmilk',
+});
+
+const euclid = localFont({
+  src: './euclid-fonts/Euclid Circular A Regular.ttf',
+  variable: '--font-euclid',
+});
 
 const navLinks = [
   {
@@ -57,7 +68,9 @@ const NavModal = ({ visible, onClose }) => {
                   key={item.name}
                   href={item.href}
                   scroll={true}
-                  className={`font-poppins text-white uppercase font-normal cursor-pointer text-[16px]  ${
+                  className={`${
+                    lemonMilk.variable
+                  } font-sans text-white uppercase font-normal cursor-pointer text-[16px]  ${
                     router.pathname == item.href
                       ? 'text-stone-200 font-semibold  border-b-4 border-guideYellow mt-6  transition-all duration-500'
                       : 'text-dimWhite mt-6 hover:opacity-80'
@@ -74,8 +87,12 @@ const NavModal = ({ visible, onClose }) => {
           </div>
         </div>
       </div>
-      <div className=" bg-white fixed top-[480px] left-0 w-full h-full mt-10">
-        <h3 className="text-black mt-4 pl-6">Follow and join us</h3>
+      <div
+        className={`${euclid.variable} font-serif bg-[#Fef7dc] fixed top-[480px] left-0 w-full h-full mt-10`}
+      >
+        <h3 className={`${euclid.variable} font-serif text-black mt-4 pl-6`}>
+          Follow and join us
+        </h3>
         <div className="pl-6 flex items-center gap-10">
           <div className="flex gap-6 text-black">
             <BsGithub className="text-2xl cursor-pointer hover:text-yellow-600" />
