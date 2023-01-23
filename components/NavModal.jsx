@@ -90,16 +90,20 @@ const NavModal = ({ visible, onClose }) => {
       <div
         className={`${euclid.variable} font-serif bg-[#Fef7dc] fixed top-[480px] left-0 w-full h-full mt-10`}
       >
-        <h3 className={`${euclid.variable} font-serif text-black mt-4 pl-6`}>
-          Follow and join us
-        </h3>
-        <div className="pl-6 flex items-center gap-10">
-          <div className="flex gap-6 text-black">
-            <BsGithub className="text-2xl cursor-pointer hover:text-yellow-600" />
-            <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-            <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-            <FaDiscord className="text-2xl cursor-pointer hover:text-red-600" />
-            <BsMedium className="text-2xl cursor-pointer hover:text-red-600" />
+        <div className="pl-6 flex items-center gap-8">
+          <div className="">
+            <h3
+              className={`${euclid.variable} font-serif text-black mt-4 pl-6 pb-4`}
+            >
+              Follow and join us
+            </h3>
+            <div className="flex gap-6 text-black pl-6">
+              <BsGithub className="text-2xl cursor-pointer hover:text-yellow-600" />
+              <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+              <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
+              <FaDiscord className="text-2xl cursor-pointer hover:text-red-600" />
+              <BsMedium className="text-2xl cursor-pointer hover:text-red-600" />
+            </div>
           </div>
 
           <div>

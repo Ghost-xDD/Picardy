@@ -29,7 +29,7 @@ const MintHero = () => {
         className={`${euclidLight.variable} font-mono text-[#FFFFFF] text-center text-[18px]`}
       >
         Claim your Picardy domain to be one of the genesis users of every dApp
-        powered by Picardy <br /> Protocol.
+        powered by Picardy Protocol.
         <br /> Earn rewards while doing so.
       </p>
 
