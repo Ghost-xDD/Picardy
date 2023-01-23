@@ -44,7 +44,7 @@ const Build = () => {
         <Card
           image={infrastructure}
           title="PLUG IN & Play
-          Infrastructure "
+          Infrastructure"
           content="Easily add any smart contract to an already existing platform and dApp.
 "
         />
