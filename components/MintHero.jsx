@@ -14,6 +14,11 @@ const euclid = localFont({
   variable: '--font-euclid',
 });
 
+const euclidLight = localFont({
+  src: './euclid-fonts/Euclid Circular A Light.ttf',
+  variable: '--font-euclidLight',
+});
+
 const MintHero = () => {
   return (
     <div className="mt-16">
@@ -26,7 +31,7 @@ const MintHero = () => {
       </div>
 
       <p
-        className={`${euclid.variable} font-serif text-[#FFFFFF] text-center text-[18px]`}
+        className={`${euclidLight.variable} font-mono text-[#FFFFFF] text-center text-[18px]`}
       >
         Claim your Picardy domain to be one of the genesis users of every dApp
         powered by Picardy <br /> Protocol. Earn rewards while doing so.

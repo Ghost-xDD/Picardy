@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         serif: ['var(--font-euclid)', ...defaultTheme.fontFamily.serif],
         sans: ['var(--font-lemonmilk)', ...defaultTheme.fontFamily.serif],
-        // mono: ['Barlow Condensed', ...defaultTheme.fontFamily.mono],
+        mono: ['var(--font-euclidLight)', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         cardGrey: 'rgba(147, 147, 147, 0.1)',

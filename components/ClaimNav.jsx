@@ -29,6 +29,8 @@ const euclid = localFont({
   variable: '--font-euclid',
 });
 
+
+
 const navLinks = [
   {
     name: 'Home',
