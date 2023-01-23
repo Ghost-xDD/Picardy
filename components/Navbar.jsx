@@ -85,7 +85,7 @@ const Navbar = () => {
       <div className="hidden md:block">
         <Link
           href="/claim-domain"
-          className={`${lemonMilk.variable} font-sans bg-[#F9CC16] rounded-lg p-2 text-black font-bold text-lg uppercase px-4`}
+          className={`${lemonMilk.variable} font-sans bg-[#F9CC16] rounded-lg p-2 text-black font-bold text-[16px] uppercase px-4`}
         >
           Claim Domain
         </Link>
