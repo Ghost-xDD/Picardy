@@ -25,11 +25,13 @@ const Early = () => {
 
       <div className="mt-8 text-end">
         <h1
-          className={`${lemonMilk.variable} font-sans text-xl lg:text-3xl uppercase font-[500]`}
+          className={`${lemonMilk.variable} font-sans text-[18px] lg:text-2xl uppercase font-[500]`}
         >
           Early Access for Community <br /> Members
         </h1>
-        <p className={`${euclidLight.variable} font-mono mt-6 text-lg`}>
+        <p
+          className={`${euclidLight.variable} font-mono mt-6 text-[16px] lg:text-lg`}
+        >
           Picardy Domains is brought to you by Picardy Protocol.
         </p>
       </div>
