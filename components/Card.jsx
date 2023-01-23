@@ -14,7 +14,7 @@ const euclid = localFont({
 
 const Card = ({ image, title, content }) => {
   return (
-    <div className=" lg:px-5 py-8 lg:py-24 mt-20 lg:mt-0   bg-cardGrey rounded-xl shadow-2xl w-full   lg:w-[30%] h-[420px] lg:h-[500px] flex flex-col items-center">
+    <div className=" lg:px-5 py-8 lg:py-12 mt-20 lg:mt-0   bg-cardGrey rounded-xl shadow-2xl w-full   lg:w-[30%] h-[420px] lg:h-[480px] flex flex-col items-center">
       <div className="text-center pt-4">
         <Image src={image} className="w-[40px] lg:w-[70px]" />
       </div>
