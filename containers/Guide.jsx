@@ -17,7 +17,7 @@ const Guide = () => {
       {/* <div className='p-2 bg-gray-400 absolute w-[82%] bottom-20' /> */}
       <AnimationOnScroll animateIn="animate__rollIn" animateOnce="true">
         <div className="flex justify-center">
-          <Image src={fluff} className="w-[100px] md:w-[200px]" />
+          <Image src={fluff} className="w-[100px] md:w-[150px]" />
         </div>
       </AnimationOnScroll>
 
