@@ -8,6 +8,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import NavModal from './NavModal';
 import localFont from '@next/font/local';
 
+const lemonMilk = localFont({
+  src: './lemon-font/LemonMilkRegular-X3XE2.otf',
+  variable: '--font-lemonmilk',
+});
+
 const euclid = localFont({
   src: './euclid-fonts/Euclid Circular A Regular.ttf',
   variable: '--font-euclid',
@@ -80,8 +85,7 @@ const Navbar = () => {
       <div className="hidden md:block">
         <Link
           href="/claim-domain"
-          className='bg-[#F9CC16] rounded-lg p-2 text-black font-bold text-lg uppercase px-4"
-        '
+          className={`${lemonMilk.variable} font-sans bg-[#F9CC16] rounded-lg p-2 text-black font-bold text-lg uppercase px-4`}
         >
           Claim Domain
         </Link>
