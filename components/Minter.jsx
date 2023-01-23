@@ -210,7 +210,7 @@ const Minter = () => {
           className={`${euclid.variable} font-serif flex flex-col items-center justify-center`}
         >
           <h1 className="text-white text-xl py-4">
-            Connect wallet to get Started
+            Connect wallet to get started
           </h1>
           <ConnectButton showBalance={false} />
         </div>
