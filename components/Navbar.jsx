@@ -58,7 +58,7 @@ const Navbar = () => {
         <Image
           src={picLogo}
           alt="Logo"
-          className="w-[100px] md:w-[160px] md:h-[50px]"
+          className="w-[100px] md:w-[120px] md:h-[50px]"
         />
         {/* <span className=" text-lg md:text-xl font-bold">Picardy</span> */}
       </Link>
