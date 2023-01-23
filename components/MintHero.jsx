@@ -9,11 +9,6 @@ const lemonMilk = localFont({
   variable: '--font-lemonmilk',
 });
 
-const euclid = localFont({
-  src: './euclid-fonts/Euclid Circular A Regular.ttf',
-  variable: '--font-euclid',
-});
-
 const euclidLight = localFont({
   src: './euclid-fonts/Euclid Circular A Light.ttf',
   variable: '--font-euclidLight',
