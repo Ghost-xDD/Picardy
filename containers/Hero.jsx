@@ -138,12 +138,7 @@ const Hero = () => {
   return (
     <>
       <div className="text-center">
-        <motion.div
-          className="pt-12 md:pt-24"
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3, ease: easeing }}
-        >
+        <div className="pt-12 md:pt-24">
           <h1
             className={`${lemonMilk.variable} text-[#020304] text-[38px] font-[500] uppercase w-full font-sans`}
           >
@@ -154,13 +149,9 @@ const Hero = () => {
           >
             suite of smart contracts that improve the creator economy
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-        >
+        <div>
           <Button props="Join Our Waitlist" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button
@@ -168,7 +159,7 @@ const Hero = () => {
           >
             Read Docs
           </button>
-        </motion.div>
+        </div>
       </div>
 
       <div className="flex  justify-center mt-48">
