@@ -155,7 +155,7 @@ const Hero = () => {
           <Button props="Join Our Waitlist" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button
-            className={`${euclid.variable} font-serif text-[#F9CC16] uppercase font-bold text-[12px] md:text-lg`}
+            className={`${euclid.variable} font-serif text-[#F9CC16] uppercase font-bold text-[12px] md:text-md`}
           >
             Read Docs
           </button>

@@ -15,7 +15,7 @@ const Button = ({ props }) => {
   return (
     <>
       <button
-        className={`${lemonMilk.variable} bg-[#F9CC16] text-[12px] md:text-lg rounded-lg p-2 uppercase text-black font-bold px-4 font-sans`}
+        className={`${lemonMilk.variable} bg-[#F9CC16] text-[12px] md:text-md rounded-lg p-2 uppercase text-black font-bold px-4 font-sans`}
       >
         {props}
       </button>
