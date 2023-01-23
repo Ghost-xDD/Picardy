@@ -24,6 +24,7 @@ import fluff2 from './fluff2.png';
 import claim from './claim.png';
 import picLogo from './picLogo.svg';
 import picardyDark from './picardyDark.svg';
+import sphere2 from './sphere2.svg';
 
 export {
   cage,
@@ -52,4 +53,5 @@ export {
   fluff2,
   picLogo,
   picardyDark,
+  sphere2,
 };

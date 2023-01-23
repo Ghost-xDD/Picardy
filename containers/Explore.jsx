@@ -1,5 +1,5 @@
 import React from 'react';
-import { cage, sphere, sphere1 } from '../public/assets';
+import { cage, sphere, sphere1, sphere2 } from '../public/assets';
 import Button from '../components/Button';
 import Image from 'next/image';
 import localFont from '@next/font/local';
@@ -48,7 +48,7 @@ const Explore = () => {
 
       <div className="flex items-center justify-between bg-faintYellow pb-20 ">
         <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
-          <Image src={sphere} className="w-[220px] md:w-[300px] lg:w-[300px]" />
+          <Image src={sphere2} className="w-[220px] md:w-[300px] lg:w-[300px]" />
         </AnimationOnScroll>
 
         <AnimationOnScroll animateIn="animate__fadeInRight" animateOnce="true">
