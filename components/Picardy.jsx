@@ -19,7 +19,7 @@ const euclidLight = localFont({
 
 const Picardy = () => {
   return (
-    <div className="bg-claimYellow mt-[80px] p-5 py-8 lg:p-12 flex items-center justify-between">
+    <div className="bg-[#Fef7dc] mt-[80px] p-5 py-8 lg:p-12 flex items-center justify-between">
       {/* <Image src={group} className="w-[150px]" /> */}
 
       <div className="mt-8 text-center">

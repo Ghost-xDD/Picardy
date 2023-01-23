@@ -20,7 +20,7 @@ const euclidLight = localFont({
 
 const Early = () => {
   return (
-    <div className="bg-claimYellow mt-[80px] p-5 py-12 lg:p-16 flex items-center justify-between">
+    <div className="bg-[#Fef7dc] mt-[80px] p-5 py-12 lg:p-16 flex items-center justify-between">
       <Image src={group} className="w-[150px]" alt="group" />
 
       <div className="mt-8 text-end">
