@@ -104,9 +104,9 @@ const Footer = () => {
       <div className="px-6 md:px-[110px] bg-footerBlack text-gray-500 pb-12">
         <ul className="block gap-12 md:flex justify-between items-center">
           <li>© 2022 Picardy Protocol | Powered by Picardy</li>
-          <li className="underline pt-6 md:pt-0">Privacy Policy</li>
+          {/* <li className="underline pt-6 md:pt-0">Privacy Policy</li>
           <li className="underline pt-6 md:pt-0">Terms of Service</li>
-          <li className="underline pt-6 md:pt-0">Cookies Settings</li>
+          <li className="underline pt-6 md:pt-0">Cookies Settings</li> */}
         </ul>
       </div>
     </>
