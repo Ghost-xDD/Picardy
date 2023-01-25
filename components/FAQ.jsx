@@ -1,11 +1,22 @@
 import React from 'react';
 import { useState } from 'react';
 import { BsChevronDoubleUp, BsChevronDoubleDown } from 'react-icons/bs';
+import localFont from '@next/font/local';
+
+const lemonMilk = localFont({
+  src: './lemon-font/LemonMilkRegular-X3XE2.otf',
+  variable: '--font-lemonmilk',
+});
+
+const euclid = localFont({
+  src: './euclid-fonts/Euclid Circular A Regular.ttf',
+  variable: '--font-euclid',
+});
 
 const FAQ = ({ question, answer }) => {
   const [expand, setExpand] = useState(false);
   const expandClass = expand ? 'display' : 'hidden';
-  const ansClass = `${expandClass} p-5 text-xl`;
+  const ansClass = `${expandClass} ${euclid.variable} font-serif p-5 text-xl`;
   const ansClass2 = `${expandClass} px-5 pt-6 font-[500] border-t-2  border-footerBlack text-xl`;
 
   return (
@@ -13,7 +24,7 @@ const FAQ = ({ question, answer }) => {
       <div className="mt-16 mx-auto text-black shadow rounded  border-footerBlack border-t-2 border-b-2 w-full md:w-3/4 transition-all duration-500">
         <div className="p-4 text-xl font-medium flex w-full">
           <div
-            className="w-full cursor-pointer transition-all duration-500"
+            className={`${euclid.variable} font-serif font-semibold w-full cursor-pointer transition-all duration-500`}
             onClick={() => setExpand(!expand)}
           >
             {question}
@@ -34,8 +45,6 @@ const FAQ = ({ question, answer }) => {
         {/* <div className={ansClass2}>{question}</div> */}
         <div className={ansClass}>{answer}</div>
       </div>
-
-      
     </>
   );
 };

@@ -31,10 +31,14 @@ const faq = () => {
       </div>
 
       <div className="px-4  md:px-24 pb-12">
-        <h1 className={`${lemonMilk.variable} text-2xl text-center font-bold mt-8 font-sans`}>
+        <h1
+          className={`${lemonMilk.variable} text-2xl text-center font-bold mt-8 font-sans`}
+        >
           FREQUENTLY ASKED QUESTIONS
         </h1>
-        <p className={`${euclid.variable} font-serif text-[#818182] text-lg text-center mt-2`}>
+        <p
+          className={`${euclid.variable} font-serif text-[#818182] text-lg text-center mt-2`}
+        >
           Here are questions we get asked the most. Don’t see what you’re
           looking for? Reach out to us anytime on our Discord, Twitter or email.
         </p>
@@ -46,7 +50,9 @@ const faq = () => {
 
       <div className="mx-8 md:mx-24">
         <div className=" mt-16 bg-faintYellow rounded-sm p-5">
-          <div className="text-center mt-[80px] font-[400] text-lg">
+          <div
+            className={`${euclid.variable} font-serif text-center mt-[80px] font-[400] text-lg`}
+          >
             Get off chain royalty data on chain and choose to use{' '}
             <span className="font-bold">Chainlink keepers </span> to automate
             the royalty smart contracts or not. <br />
