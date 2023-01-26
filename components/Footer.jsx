@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { logo, picardy, picardyFoo } from '../public/assets';
 import { FaTwitter, FaLinkedin, FaDiscord } from 'react-icons/fa';
+import { BsFillStarFill } from 'react-icons/bs';
 import { BsGithub, BsMedium } from 'react-icons/bs';
 import localFont from '@next/font/local';
 
@@ -29,9 +30,7 @@ const Footer = () => {
                 />
               </span>
 
-              <p
-                className={`${euclid.variable} font-serif text-gray-300 text-lg`}
-              >
+              <p className={`${euclid.variable} font-serif text-white text-lg`}>
                 Community tooling that improves the creator economy.
               </p>
 
@@ -57,64 +56,68 @@ const Footer = () => {
           <div className="p-5">
             <ul>
               <p
-                className={`${lemonMilk.variable} text-[#F0F4FE] font-sans font-bold text-xl pb-4`}
+                className={`${lemonMilk.variable} text-[#F0F4FE] font-sans font-normal text-xl pb-4`}
               >
-                Other Tools
+                Learn More
               </p>
               <li
-                className={`${euclid.variable}  text-white text-md pb-2 font-serif font-semibold hover:text-yellow-600 cursor-pointer`}
+                className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
               >
-                Picardy App
+                Builder's Den
               </li>
               <li
-                className={`${euclid.variable} font-serif text-white text-md pb-2 font-semibold hover:text-yellow-600 cursor-pointer`}
+                className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
               >
-                <a
-                  href="https://picardy-nft-domain.vercel.app/buy-domains"
-                  target="_blank"
-                >
-                  Picardy NFT Domains
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="p-5">
-            <ul>
-              <p
-                className={`${lemonMilk.variable} font-sans text-[#F0F4FE] font-bold text-xl pb-4`}
-              >
-                Company
-              </p>
-              <li
-                className={`${euclid.variable} text-white font-serif text-md pb-2 font-semibold hover:text-yellow-600 cursor-pointer`}
-              >
-                About Us
+                Docs
               </li>
               <li
-                className={`${euclid.variable} text-white font-serif text-md pb-2 font-semibold hover:text-yellow-600 cursor-pointer`}
-              >
-                Careers
-              </li>
-              <li
-                className={`${euclid.variable} text-white font-serif text-md pb-2 font-semibold hover:text-yellow-600 cursor-pointer`}
+                className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
               >
                 FAQs
               </li>
               <li
-                className={`${euclid.variable} text-white font-serif text-md pb-2 font-semibold hover:text-yellow-600 cursor-pointer`}
+                className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer flex items-center gap-2`}
               >
-                Contact Us
+                <span>Claim Domain</span>
+                <span>
+                  <BsFillStarFill className="text-yellow-600" />
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="hidden lg:block p-5">
+            <ul>
+              <p
+                className={`${lemonMilk.variable} font-sans text-[#F0F4FE]  text-xl pb-4`}
+              >
+                Company
+              </p>
+              <li
+                className={`${euclid.variable} text-white font-serif text-md pb-2  hover:text-yellow-600 cursor-pointer`}
+              >
+                About Us
+              </li>
+              <li
+                className={`${euclid.variable} font-serif text-md pb-2 text-yellow-600 hover:text-yellow-600 cursor-pointer`}
+              >
+                Join Our Team
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="px-6 md:px-[110px] bg-footerBlack text-gray-500 pb-12">
-        <ul className="block gap-12 md:flex justify-between items-center">
-          <li>© 2022 Picardy Protocol | Powered by Picardy</li>
-          {/* <li className="underline pt-6 md:pt-0">Privacy Policy</li>
-          <li className="underline pt-6 md:pt-0">Terms of Service</li>
+      <div className="px-6 md:px-[110px] bg-footerBlack text-white pb-12">
+        <ul className="block gap-10 md:flex  items-center">
+          <li className={`${euclid.variable} font-serif`}>
+            © 2022 Picardy Protocol | Powered by Picardy
+          </li>
+          <li
+            className={`${euclid.variable} font-serif underline pt-6 md:pt-0`}
+          >
+            Privacy Policy
+          </li>
+          {/*<li className="underline pt-6 md:pt-0">Terms of Service</li>
           <li className="underline pt-6 md:pt-0">Cookies Settings</li> */}
         </ul>
       </div>

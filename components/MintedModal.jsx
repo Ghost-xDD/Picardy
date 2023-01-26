@@ -71,12 +71,12 @@ const MintedModal = ({ txHash, openMintModal, handleOnClose }) => {
 
                   <div className="mt-4">
                     <span
-                      className="text-gray-600  font-medium  text-lg  hover:opacity-70 border-none"
+                      className="text-gray-700  font-medium  text-lg  hover:opacity-70 border-none"
                       //   onClick={closeModal}
                     >
                       <a
                         target="_blank"
-                        className="border-none"
+                        className="border-gray-100"
                         href={'https://mumbai.polygonscan.com/tx/' + txHash}
                       >
                         To see more, view it on Opensea
