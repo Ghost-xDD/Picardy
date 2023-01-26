@@ -29,8 +29,6 @@ const euclid = localFont({
   variable: '--font-euclid',
 });
 
-
-
 const navLinks = [
   {
     name: 'Home',
@@ -38,7 +36,7 @@ const navLinks = [
   },
   {
     name: "Builder's Den",
-    href: '/builders',
+    href: 'https://picardy-protocol.gitbook.io/picardy-protocol-docs/',
   },
   {
     name: 'Faq',
