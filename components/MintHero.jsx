@@ -1,8 +1,16 @@
 import React from 'react';
 import { mintHero } from '../public/assets';
 import Image from 'next/image';
-import Minter from '../components/Minter';
+// import Minter from '../components/Minter';
 import localFont from '@next/font/local';
+import dynamic from 'next/dynamic';
+
+const Minter = dynamic(
+  () => {
+    return import('../components/Minter');
+  },
+  { ssr: false }
+);
 
 const lemonMilk = localFont({
   src: './lemon-font/LemonMilkRegular-X3XE2.otf',
