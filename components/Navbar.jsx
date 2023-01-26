@@ -25,7 +25,7 @@ const navLinks = [
   },
   {
     name: "Builder's Den",
-    href: '/builders',
+    href: 'https://picardy-protocol.gitbook.io/picardy-protocol-docs/',
   },
   {
     name: 'Faq',

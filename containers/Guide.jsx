@@ -29,9 +29,13 @@ const Guide = () => {
             Get off chain royalty data on chain and choose to use{' '}
             <span className="font-bold">Chainlink keepers </span> to automate
             the royalty smart contracts or not. <br />
-            <span className="font-bold py-3 text-guideYellow">
+            <a
+              className="font-bold py-3 text-guideYellow"
+              href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/automation/register-automation"
+              target="_blank"
+            >
               Register Automation here
-            </span>
+            </a>
           </p>
           <div className="justify-center flex mt-8">
             <Button props="Read Guide" />

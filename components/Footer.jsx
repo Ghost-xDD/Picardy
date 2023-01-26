@@ -37,10 +37,19 @@ const Footer = () => {
 
               <div className="flex gap-6 pb-5 mt-4 text-white">
                 <BsGithub className="text-2xl cursor-pointer hover:text-yellow-600" />
-                <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-                <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
+                <a href="https://twitter.com/picardyprotocol?t=YiIsHXtolLn_TT8CWEgzHQ&s=09">
+                  <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/picardyllc"
+                  target="_blank"
+                >
+                  <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
+                </a>
                 <FaDiscord className="text-2xl cursor-pointer hover:text-red-600" />
-                <BsMedium className="text-2xl cursor-pointer hover:text-red-600" />
+                <a href="https://www.medium.com/@picardy" target="_blank">
+                  <BsMedium className="text-2xl cursor-pointer hover:text-red-600" />
+                </a>
               </div>
             </ul>
           </div>

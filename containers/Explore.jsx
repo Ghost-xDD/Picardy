@@ -37,7 +37,10 @@ const Explore = () => {
               Create solutions to sell project royalties <br /> as NFTs or ERC
               21 tokens, and generate <br /> tokens for brands & creators.
             </p>
-            <Button props="Read Docs" />
+            <Button
+              props="Read Docs"
+              links="https://picardy-protocol.gitbook.io/picardy-protocol-docs/"
+            />
           </div>
         </AnimationOnScroll>
 
@@ -48,7 +51,10 @@ const Explore = () => {
 
       <div className="flex items-center justify-between bg-faintYellow pb-20 ">
         <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
-          <Image src={sphere2} className="w-[220px] md:w-[300px] lg:w-[300px]" />
+          <Image
+            src={sphere2}
+            className="w-[220px] md:w-[300px] lg:w-[300px]"
+          />
         </AnimationOnScroll>
 
         <AnimationOnScroll animateIn="animate__fadeInRight" animateOnce="true">

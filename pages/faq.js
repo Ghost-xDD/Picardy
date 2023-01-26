@@ -56,10 +56,19 @@ const faq = () => {
             Get off chain royalty data on chain and choose to use{' '}
             <span className="font-bold">Chainlink keepers </span> to automate
             the royalty smart contracts or not. <br />
-            <p className="font-bold py-6 ">Register Automation here</p>
+            <a
+              className="font-bold py-6"
+              href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/automation/register-automation"
+              target="_blank"
+            >
+              Register Automation here
+            </a>
           </div>
           <div className="justify-center flex mt-4">
-            <Button props="Read Guide" />
+            <Button
+              props="Read Guide"
+              links="https://picardy-protocol.gitbook.io/picardy-protocol-docs/"
+            />
           </div>
         </div>
       </div>
