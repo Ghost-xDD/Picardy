@@ -81,7 +81,10 @@ const Hero = () => {
         </div>
 
         <div>
-          <Button props="Join Our Waitlist" />
+          <Button
+            props="Join Our Waitlist"
+            links="https://docs.google.com/forms/d/e/1FAIpQLSd73mZJMnvfohJ_BqsHgw3EELatrWm_-_CtvepqIpPQC9hxog/viewform"
+          />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button
             className={`${lemonMilk.variable} font-sans text-[#F9CC16] uppercase font-bold text-[12px]  md:text-[15px]`}
