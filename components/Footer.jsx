@@ -64,7 +64,7 @@ const Footer = () => {
               <li
                 className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
               >
-                <a href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/">
+                <a href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/builders-den/understanding-the-protocol">
                   Builder's Den
                 </a>
               </li>
@@ -81,14 +81,15 @@ const Footer = () => {
               >
                 FAQs
               </Link>
-              <li
+              <Link
                 className={`${euclid.variable}  text-white text-md pt-2 font-serif  hover:text-yellow-600 cursor-pointer flex items-center gap-2`}
+                href="/claim-domain"
               >
                 <span>Claim Domain</span>
                 <span>
                   <BsFillStarFill className="text-yellow-600" />
                 </span>
-              </li>
+              </Link>
               <li
                 className={`${euclid.variable}  lg:hidden   text-md pt-3 font-serif text-yellow-600  hover:text-yellow-600 cursor-pointer block items-center gap-2`}
               >

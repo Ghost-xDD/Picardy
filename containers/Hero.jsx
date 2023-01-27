@@ -89,7 +89,10 @@ const Hero = () => {
           <button
             className={`${lemonMilk.variable} font-sans text-[#F9CC16] uppercase font-bold text-[12px]  md:text-[15px]`}
           >
-            <a href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/">
+            <a
+              href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/"
+              target="_blank"
+            >
               Read Docs
             </a>
           </button>
