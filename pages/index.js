@@ -17,7 +17,7 @@ export default function Home() {
           content="Decentralized royalty sale FOR MUSIC ARTISTES & CREATORS."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="android-chrome-512x512.png" />
       </Head>
       <div className="bg-[#FFFFFF] px-4 md:px-12 lg:px-24">
         <Navbar />

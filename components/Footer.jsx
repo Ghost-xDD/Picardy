@@ -5,6 +5,7 @@ import { FaTwitter, FaLinkedin, FaDiscord } from 'react-icons/fa';
 import { BsFillStarFill } from 'react-icons/bs';
 import { BsGithub, BsMedium } from 'react-icons/bs';
 import localFont from '@next/font/local';
+import Link from 'next/link';
 
 const lemonMilk = localFont({
   src: './lemon-font/LemonMilkRegular-X3XE2.otf',
@@ -21,7 +22,7 @@ const Footer = () => {
     <>
       <div className="mt-20">
         <div className="bg-footerBlack h-1/2 w-full flex md:flex-row flex-col justify-around items-start px-18 pt-20 ">
-          <div className="p-5">
+          <div className="p-5 border-b-gray-400 border-b-2 md:border-none">
             <ul>
               <span className="flex items-center gap-3 pb-6">
                 <Image
@@ -63,25 +64,35 @@ const Footer = () => {
               <li
                 className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
               >
-                Builder's Den
+                <a href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/">
+                  Builder's Den
+                </a>
               </li>
               <li
                 className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
               >
-                Docs
+                <a href="https://picardy-protocol.gitbook.io/picardy-protocol-docs/">
+                  Docs
+                </a>
               </li>
-              <li
-                className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer`}
+              <Link
+                className={`${euclid.variable}  text-white text-md pb-4 font-serif  hover:text-yellow-600 cursor-pointer`}
+                href="/faqs"
               >
                 FAQs
-              </li>
+              </Link>
               <li
-                className={`${euclid.variable}  text-white text-md pb-2 font-serif  hover:text-yellow-600 cursor-pointer flex items-center gap-2`}
+                className={`${euclid.variable}  text-white text-md pt-2 font-serif  hover:text-yellow-600 cursor-pointer flex items-center gap-2`}
               >
                 <span>Claim Domain</span>
                 <span>
                   <BsFillStarFill className="text-yellow-600" />
                 </span>
+              </li>
+              <li
+                className={`${euclid.variable}  lg:hidden   text-md pt-3 font-serif text-yellow-600  hover:text-yellow-600 cursor-pointer block items-center gap-2`}
+              >
+                <span>Join Our Team</span>
               </li>
             </ul>
           </div>
