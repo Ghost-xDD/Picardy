@@ -1,34 +1,36 @@
-import { useState, useEffect } from "react";
-import { useAccount } from "wagmi";
-import { ethers } from "ethers";
-import { config } from "../constants";
-import picardyDomainFactoryAbi from "../constants/picardyDomainFactoryAbi.json";
-import picardyDomainAbi from "../constants/picardyDomainAbi.json";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import MintedModal from "./MintedModal";
-import localFont from "@next/font/local";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useState, useEffect } from 'react';
+import { useAccount } from 'wagmi';
+import { ethers } from 'ethers';
+import { config } from '../constants';
+import picardyDomainFactoryAbi from '../constants/picardyDomainFactoryAbi.json';
+import picardyDomainAbi from '../constants/picardyDomainAbi.json';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import MintedModal from './MintedModal';
+import localFont from '@next/font/local';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
+const ress = '.3rd';
 
 const euclid = localFont({
-  src: "./euclid-fonts/Euclid Circular A Regular.ttf",
-  variable: "--font-euclid",
+  src: './euclid-fonts/Euclid Circular A Regular.ttf',
+  variable: '--font-euclid',
 });
 
 const Minter = () => {
   const { address, isConnected } = useAccount();
-  const [userDomain, setUserDomain] = useState("");
-  const [selectTld, setSelectTld] = useState(".3rd");
-  const [selectTldPrice, setSelectTldPrice] = useState("0.0");
-  const [domainFactory, setDomainFactory] = useState("");
+  const [userDomain, setUserDomain] = useState('');
+  const [selectTld, setSelectTld] = useState('.3rd');
+  const [selectTldPrice, setSelectTldPrice] = useState('0.0');
+  const [domainFactory, setDomainFactory] = useState('');
   const [tlds, setTlds] = useState();
   const [openMintModal, setOpenMintModal] = useState(false);
-  const [nftHash, setNftHash] = useState("");
+  const [nftHash, setNftHash] = useState('');
 
   const notify = (e) => {
     e.preventDefault();
 
-    toast.error("Please connect a Compatible Web3 Wallet", {
+    toast.error('Please connect a Compatible Web3 Wallet', {
       position: toast.POSITION.TOP_CENTER,
     });
   };
@@ -66,12 +68,12 @@ const Minter = () => {
     setDomainFactory(newDomainFactory);
 
     const tldAddresses = await newDomainFactory.getTldsArray().then((res) => {
-      setTlds(res);
+      setTlds(ress);
     });
   };
 
   const handleChange = (event) => {
-    setSelectTld(event.target.value);
+    // setSelectTld(event.target.value);
     getTldPrice(event.target.value);
   };
 
@@ -85,7 +87,7 @@ const Minter = () => {
     e.preventDefault();
 
     if (userDomain.trim().length === 0) {
-      toast.error("Input cannot be empty", {
+      toast.error('Input cannot be empty', {
         position: toast.POSITION.TOP_CENTER,
       });
       return;
@@ -95,7 +97,7 @@ const Minter = () => {
     const signer = provider.getSigner();
 
     const formatPrice = await ethers.utils.parseUnits(selectTldPrice, 18);
-    const formattedName = userDomain.replace(/\s+/g, "").toLowerCase().trim();
+    const formattedName = userDomain.replace(/\s+/g, '').toLowerCase().trim();
     const tldAddress = await domainFactory.tldNamesAddresses(selectTld);
 
     const domainContract = new ethers.Contract(
@@ -105,7 +107,7 @@ const Minter = () => {
     );
 
     const mintNotification = toast.loading(
-      "Please wait! Minting your NFT Domain"
+      'Please wait! Minting your NFT Domain'
     );
 
     const mint = await domainContract.mint(formattedName, address, {
@@ -114,8 +116,8 @@ const Minter = () => {
     const receipt = await mint.wait();
 
     toast.update(mintNotification, {
-      render: "Mint Completed Successfully",
-      type: "success",
+      render: 'Mint Completed Successfully',
+      type: 'success',
       isLoading: false,
       autoClose: 7000,
     });
@@ -150,13 +152,14 @@ const Minter = () => {
                 className={`${euclid.variable} font-serif focus:outline-none h-[42px]  rounded-r-lg bg-gradient-to-r from-[#C6FFDD] via-[#FBD786] to-[#F7797D] font-bold`}
                 onChange={handleChange}
               >
-                {tlds
+                {/* {tlds
                   ? tlds.map((option, index) => (
                       <option key={index} value={option} className="p-2">
                         {option}
                       </option>
                     ))
-                  : "..."}
+                  : '...'} */}
+                <option className="p-2">{selectTld}</option>
               </select>
             </div>
           </div>
