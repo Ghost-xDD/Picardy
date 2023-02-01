@@ -1,8 +1,6 @@
 const config = {
-  sbtFactoryAddress: "0x7E70091180826d0c637DcE2a893885651361F1a3",
-  domainFactoryAddress: "0x1DCa1A8372bc5883414E636222650EFB4418De14",
-  sbtResolverAddress: "0x715777beFf185be3aE9040c710B84fDFe2b4b626",
-  domainResolverAddress: "0xBaaCC2fE0549117E200Cf7A431f6eAEd7171a3ab",
+  domainFactoryAddress: "0xf3D2E555A1E47B93B9Ae6621B18982C7C3B6a23A",
+  domainResolverAddress: "0x8A2911Cb323C6DF43A38fA423193E38926B18820",
 };
 
 const tlds = {};
