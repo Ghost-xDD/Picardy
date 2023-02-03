@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useAccount } from 'wagmi';
+import { useAccount, useBalance } from 'wagmi';
 import { ethers } from 'ethers';
 import { config } from '../constants';
 import picardyDomainFactoryAbi from '../constants/picardyDomainFactoryAbi.json';
@@ -11,6 +11,7 @@ import localFont from '@next/font/local';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const ress = '.3rd';
+const defaultGas = 0.07;
 
 const euclid = localFont({
   src: './euclid-fonts/Euclid Circular A Regular.ttf',
@@ -26,6 +27,14 @@ const Minter = () => {
   const [tlds, setTlds] = useState();
   const [openMintModal, setOpenMintModal] = useState(false);
   const [nftHash, setNftHash] = useState('');
+  // const [walletBalance, setWalletBalance] = useState('');
+
+  const { data } = useBalance({
+    addressOrName: address,
+  });
+
+  let walletBalance = data?.formatted;
+  console.log(walletBalance);
 
   const notify = (e) => {
     e.preventDefault();
@@ -88,6 +97,13 @@ const Minter = () => {
 
     if (userDomain.trim().length === 0) {
       toast.error('Input cannot be empty', {
+        position: toast.POSITION.TOP_CENTER,
+      });
+      return;
+    }
+
+    if (defaultGas > walletBalance) {
+      toast.error('Insufficient Funds', {
         position: toast.POSITION.TOP_CENTER,
       });
       return;
@@ -179,7 +195,7 @@ const Minter = () => {
           {isConnected && (
             <button
               type="submit"
-              className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-[40%] sm:w-auto px-5 py-2.5 text-center lg:px-[50px]"
+              className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-[70%] sm:w-auto px-5 py-2.5 text-center lg:px-[50px]"
               // className="text-black mt-10 uppercase font-bold  flex mx-auto text-[20px] justify-center bg-guideYellow hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black rounded-lg text-sm w-[40%] sm:w-auto px-5 py-2.5 text-center dark:bg-black dark:hover:bg-black dark:focus:ring-black lg:px-[50px]"
               onClick={mintDomain}
             >
